@@ -276,7 +276,8 @@ jQuery(function ($) {
     // Google Map
     // -------------------------------------------------------------
 
-    (function () {
+    
+	(function myMap() {
         var myLatlng = new google.maps.LatLng(19.113657, 72.8697219);
 
            var styles = [
@@ -335,13 +336,11 @@ jQuery(function ($) {
                 content: contentString
             });
 
-            google.maps.event.addListener(marker, 'click', function () {
+            google.maps.event.addListener(marker, 'click', function myMap() {
                 infowindow.open(map, marker);
             });
 
     }());
-
-
 });
 
 
